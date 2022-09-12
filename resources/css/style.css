@@ -1,4 +1,23 @@
+/* Declare variables and color scheme */
+:root {
+  --black: rgb(17, 17, 17);
+  --white: rgb(230, 230, 230);
+  --lightgray: rgb(190, 190, 190);
+  --gray: rgb(150, 150, 150);
+  --pink: rgb(255, 0, 115);
+}
+
+/* Reset margin, padding and colors on most elements for better control */
 * {
   margin: 0;
   padding: 0;
+  background-color: var(--black, rgb(14, 14, 14));
+  color: var(--white);
+}
+
+.typed-text {
+  color: var(--pink);
+}
+a {
+  color: var(--gray);
 }
