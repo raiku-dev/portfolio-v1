@@ -58,13 +58,8 @@ li {
   margin: 0 5px;
 }
 
-nav a {
+a {
   color: var(--gray);
-  padding: 10px 3px 10px;
-  display: flex;
-  /* text-decoration-color: transparent;
-  -webkit-text-decoration-color: transparent;
-  -moz-text-decoration-color: transparent; */
   transition: 0.5s;
   text-decoration: none;
   background-image: linear-gradient(var(--pink), var(--pink));
@@ -73,19 +68,17 @@ nav a {
   background-repeat: no-repeat, no-repeat;
 }
 
-nav a:hover {
+nav a {
+  padding: 10px 3px 10px;
+}
+
+a:hover {
   color: var(--pink);
-  /* text-decoration-color: var(--pink);
-  -webkit-text-decoration-color: var(--pink);
-  -moz-text-decoration-color: var(--pink); */
   background-size: 100% 2px;
 }
 
 nav span {
   margin-left: 10px;
-  text-decoration-color: transparent;
-  -webkit-text-decoration-color: transparent;
-  -moz-text-decoration-color: transparent;
   cursor: default;
 }
 
