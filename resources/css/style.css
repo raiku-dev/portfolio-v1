@@ -1,23 +1,117 @@
 /* Declare variables and color scheme */
 :root {
-  --black: rgb(17, 17, 17);
+  --black: rgb(26, 26, 26);
   --white: rgb(230, 230, 230);
   --lightgray: rgb(190, 190, 190);
   --gray: rgb(150, 150, 150);
   --pink: rgb(255, 0, 115);
 }
 
-/* Reset margin, padding and colors on most elements for better control */
+/* Reset some CSS */
 * {
   margin: 0;
   padding: 0;
-  background-color: var(--black, rgb(14, 14, 14));
   color: var(--white);
+  font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
 }
 
-.typed-text {
+body {
+  background-color: var(--black);
+}
+
+/* Generic Classes */
+
+.pink {
   color: var(--pink);
 }
-a {
+
+.lightgray {
+  color: var(--lightgray);
+}
+
+.gray {
   color: var(--gray);
+}
+
+/* Header and Nav */
+
+header {
+  width: 100vw;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  margin-right: 50px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: baseline;
+  margin: 0 5px;
+}
+
+nav a {
+  color: var(--gray);
+  padding: 10px 3px 10px;
+  display: flex;
+  /* text-decoration-color: transparent;
+  -webkit-text-decoration-color: transparent;
+  -moz-text-decoration-color: transparent; */
+  transition: 0.5s;
+  text-decoration: none;
+  background-image: linear-gradient(var(--pink), var(--pink));
+  background-size: 0% 2px;
+  background-position: 0 100%;
+  background-repeat: no-repeat, no-repeat;
+}
+
+nav a:hover {
+  color: var(--pink);
+  /* text-decoration-color: var(--pink);
+  -webkit-text-decoration-color: var(--pink);
+  -moz-text-decoration-color: var(--pink); */
+  background-size: 100% 2px;
+}
+
+nav span {
+  margin-left: 10px;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-color: transparent;
+  -moz-text-decoration-color: transparent;
+  cursor: default;
+}
+
+/* Welcome Section */
+
+#welcome-section {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.intro-text {
+  margin-left: 10rem;
+}
+
+.intro-p1 {
+  font-size: 1.2rem;
+}
+
+.intro-text h1 {
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+
+.intro-bio {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
 }
