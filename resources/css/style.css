@@ -11,7 +11,7 @@
 * {
   margin: 0;
   padding: 0;
-  color: var(--white);
+  color: var(--gray);
   font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
 }
 
@@ -19,10 +19,19 @@ body {
   background-color: var(--black);
 }
 
-/* Generic Classes */
+main {
+  width: 70%;
+  margin: auto;
+}
+
+/* Generic Classes and stylings */
 
 .pink {
   color: var(--pink);
+}
+
+.white {
+  color: var(--white);
 }
 
 .lightgray {
@@ -31,6 +40,10 @@ body {
 
 .gray {
   color: var(--gray);
+}
+
+span {
+  color: var(--pink);
 }
 
 /* Header and Nav */
@@ -59,7 +72,6 @@ li {
 }
 
 a {
-  color: var(--gray);
   transition: 0.5s;
   text-decoration: none;
   background-image: linear-gradient(var(--pink), var(--pink));
@@ -87,12 +99,11 @@ nav span {
 #welcome-section {
   display: flex;
   align-items: center;
-  width: 100vw;
   height: 100vh;
 }
 
 .intro-text {
-  margin-left: 10rem;
+  margin-bottom: 8rem;
 }
 
 .intro-p1 {
@@ -102,6 +113,7 @@ nav span {
 .intro-text h1 {
   font-size: 4rem;
   margin: 1rem 0;
+  line-height: 120%;
 }
 
 .intro-bio {
