@@ -106,12 +106,17 @@ nav span {
 .email {
   position: fixed;
   width: 120px;
-  height: 200px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   bottom: 0;
+}
+
+.line {
+  height: 100px;
+  width: 1px;
+  background-color: var(--gray);
 }
 
 .social-media {
@@ -122,13 +127,43 @@ nav span {
   right: 0;
 }
 
+.email a {
+  padding: 5px;
+  background-image: none;
+  transform: rotate(90deg);
+  color: var(--gray);
+  margin-bottom: 7.2rem;
+  transition: 0.5s;
+}
+
+.email a:hover {
+  color: var(--pink);
+  margin-bottom: 7.5rem;
+}
+
 .social-media svg {
   width: 20px;
   height: auto;
-  fill: var(--white);
-  stroke: var(--white);
-  margin: 15px;
+  fill: var(--gray);
+  stroke: var(--gray);
+  margin: 2rem;
   position: relative;
+  transition: 0.5s;
+}
+
+.social-media a {
+  color: var(--gray);
+  transition: 0.5s;
+  background-image: none;
+}
+
+.social-media a:hover {
+  transform: translate(0, -5px);
+}
+
+.social-media svg:hover {
+  fill: var(--pink);
+  stroke: var(--pink);
 }
 
 /* Welcome Section */
@@ -148,9 +183,9 @@ nav span {
 }
 
 .intro-text h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
   margin: 1rem 0;
-  line-height: 120%;
+  line-height: 130%;
 }
 
 .intro-bio {
