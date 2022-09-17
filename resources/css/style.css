@@ -5,6 +5,7 @@
   --lightgray: rgb(190, 190, 190);
   --gray: rgb(150, 150, 150);
   --pink: rgb(255, 0, 115);
+  --darkgray: rgb(70, 70, 70);
 }
 
 /* Reset some CSS */
@@ -50,6 +51,10 @@ section {
 
 span {
   color: var(--pink);
+}
+
+p {
+  line-height: 1.5rem;
 }
 
 /* Header and Nav */
@@ -191,4 +196,34 @@ nav span {
 .intro-bio {
   font-size: 1.1rem;
   line-height: 1.5rem;
+}
+
+/* About Section */
+
+#about-section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h2 span {
+  font-size: 1.6rem;
+  margin-right: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+h2 .line {
+  width: 200px;
+  height: 1px;
+  align-self: center;
+  margin-left: 2rem;
+  background-color: var(--darkgray);
+}
+
+h3 {
+  text-decoration: underline;
 }
