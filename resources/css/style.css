@@ -16,6 +16,10 @@
   font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--black);
 }
@@ -242,7 +246,7 @@ h3 {
 }
 
 .show-more {
-  display: block;
+  display: none;
 }
 
 .about-img {
@@ -254,5 +258,25 @@ h3 {
   width: 20rem;
   height: auto;
   border-radius: 10px;
-  filter: ;
+  filter: saturate(0);
+  transition: 0.5s;
+}
+
+.img-border {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  border: 2px solid var(--pink);
+  transform: translate(5%, -95%);
+  border-radius: 10px;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.about-img img:hover {
+  filter: saturate(100%);
+}
+
+.about-img img:hover ~ #img-border {
+  transform: translate(2%, -97%);
 }
