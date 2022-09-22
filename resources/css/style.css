@@ -6,6 +6,7 @@
   --gray: rgb(150, 150, 150);
   --pink: rgb(255, 0, 115);
   --darkgray: rgb(70, 70, 70);
+  --lightblack: rgb(34, 34, 34);
 }
 
 /* Reset some CSS */
@@ -234,7 +235,7 @@ h2 .line {
   background-color: var(--darkgray);
 }
 
-h3 {
+#about-section h3 {
   text-decoration: underline;
   text-underline-offset: 0.5rem;
   margin-bottom: 0.5rem;
@@ -344,4 +345,106 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* Project Section */
+
+#project-section {
+  width: 100%;
+  margin: 10rem auto;
+}
+
+#project-section h2 {
+  margin-bottom: 4rem;
+}
+
+.featured-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 350px;
+  margin-bottom: 7rem;
+}
+
+.featured-image {
+  width: 60%;
+  height: 100%;
+}
+
+.featured-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0) contrast(0.8);
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.featured-image img:hover {
+  filter: saturate(1) contrast(1);
+}
+
+.featured-text {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: end;
+}
+
+.ft-text-left {
+  align-items: flex-start;
+  text-align: start;
+}
+
+.featured-text > * {
+  margin: 0.5rem 0;
+}
+
+.featured-text h3 {
+  color: var(--lightgray);
+  font-size: 1.5rem;
+}
+
+.project-description {
+  width: 110%;
+  background-color: var(--lightblack);
+  padding: 1rem;
+  border-radius: 5px;
+  z-index: 1;
+  box-shadow: 0px 3px 7px rgb(19, 19, 19);
+}
+
+.featured-text li {
+  font-family: monospace;
+}
+
+.project-links {
+  display: flex;
+}
+
+.project-links a {
+  color: var(--lightgray);
+  background-image: none;
+  margin-left: 0.7rem;
+}
+
+.project-links svg {
+  width: auto;
+  height: 1.5rem;
+  fill: var(--lightgray);
+  stroke: var(--lightgray);
+  transition: 0.5s;
+}
+
+.project-links a:hover > svg {
+  fill: var(--pink);
+  stroke: var(--pink);
+}
+
+.featured-image a:hover {
+  transition: 1s;
 }
