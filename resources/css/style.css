@@ -176,7 +176,7 @@ nav span {
   transform: translate(0, -5px);
 }
 
-.social-media svg:hover {
+.social-media a:hover > svg {
   fill: var(--pink);
   stroke: var(--pink);
 }
@@ -251,6 +251,8 @@ h3 {
   width: 55%;
 }
 
+/* Show more/less button and text */
+
 .show-btn {
   cursor: pointer;
 }
@@ -262,6 +264,8 @@ h3 {
 .bio-extended {
   display: block;
 }
+
+/* end of show more/less */
 
 .about-img {
   width: 40%;
@@ -293,4 +297,51 @@ h3 {
 
 .about-img img:hover ~ #img-border {
   transform: translate(2%, -97%);
+}
+
+/* Skills Section */
+
+#skills-section {
+  width: 90%;
+  margin: 7rem auto;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 5rem auto;
+}
+
+.skills-container img {
+  height: 4rem;
+  width: auto;
+  filter: saturate(0) contrast(50%) invert(0) brightness(100%);
+  transition: 0.5s;
+  padding: 2rem;
+}
+
+.skills-container .js-icon {
+  filter: saturate(0) contrast(50%) invert(0) brightness(80%);
+}
+
+.skills-container .github-icon {
+  filter: saturate(0) contrast(100%) invert(1) brightness(50%);
+}
+
+.skills-container .github-icon:hover {
+  filter: saturate(100%) contrast(100%) invert(1) brightness(100%);
+}
+
+.skills-container img:hover {
+  filter: saturate(100%) contrast(100%) invert(0) brightness(100%);
+  transform: scale(1.1);
+}
+
+.skill-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
