@@ -281,7 +281,7 @@ h2 .line {
   transition: 0.5s;
 }
 
-.img-border {
+#img-border {
   position: absolute;
   width: 20rem;
   height: 20rem;
@@ -290,6 +290,7 @@ h2 .line {
   border-radius: 10px;
   transition: 0.5s;
   z-index: -1;
+  transition-delay: 0ms;
 }
 
 .about-img img:hover {
@@ -495,6 +496,8 @@ h2 .line {
   margin: 5rem;
 }
 
+/* Footer */
+
 footer {
   text-align: center;
   font-size: 1rem;
@@ -505,4 +508,78 @@ footer {
   font-size: 0.8rem;
   opacity: 0.7;
   margin: 0.3rem;
+}
+
+/*  Transition effect 
+    main classes */
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+}
+
+.hiddenL {
+  transform: translateX(-100%) translateY(0);
+}
+
+.hiddenR {
+  transform: translateX(100%) translateY(0);
+}
+
+.hiddenT {
+  transform: translateX(0) translateY(-100%);
+}
+
+.hiddenB {
+  transform: translateX(0) translateY(100%);
+}
+
+.visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0) translateY(0);
+}
+
+/* NAV Transition Effect */
+
+nav li:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+nav li:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+nav li:nth-child(4) {
+  transition-delay: 600ms;
+}
+
+nav li:nth-child(5) {
+  transition-delay: 800ms;
+}
+
+/* Social Media and E-Mail Links transitions */
+
+.social-media,
+.email {
+  transition-delay: 2000ms;
+}
+
+/* Welcome Section Transition Effects */
+
+.intro-text .hiddenL:nth-child(2) {
+  transition-delay: 800ms;
+}
+.intro-text .hiddenL:nth-child(3) {
+  transition-delay: 1000ms;
+}
+.intro-text .hiddenL:nth-child(4) {
+  transition-delay: 1200ms;
+}
+
+/* About Section Transitions */
+
+.about-block * {
+  transition-delay: 600ms;
 }
