@@ -29,7 +29,7 @@ body {
 
 main {
   width: 70%;
-  max-width: 1400px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -197,6 +197,7 @@ nav span {
   display: flex;
   align-items: center;
   height: 100vh;
+  margin: auto;
 }
 
 .intro-text {
@@ -527,7 +528,8 @@ footer {
 
 .hidden {
   opacity: 0;
-  transition: filter 1s, transform 1s, opacity 1s;
+  transition: filter 1s, transform 1s, opacity 1s, color 1s, background-size 1s,
+    background-color 0.5s;
   filter: blur(5px);
 }
 
