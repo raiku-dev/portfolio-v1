@@ -821,7 +821,6 @@ nav li:nth-child(5) {
     box-shadow: 0px 5px 10px rgb(19, 19, 19);
     padding-top: 50%;
     box-sizing: border-box;
-    display: none;
   }
 
   .nav-menu li {
@@ -832,7 +831,6 @@ nav li:nth-child(5) {
 
   .nav-menu.active {
     right: 0;
-    display: block;
   }
 }
 
