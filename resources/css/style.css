@@ -80,6 +80,12 @@ header {
   background-color: var(--black);
 }
 
+.logo {
+  height: 2.7rem;
+  width: auto;
+  border-radius: 50%;
+}
+
 nav {
   margin-right: 50px;
 }
@@ -189,6 +195,7 @@ nav span {
 #welcome-section {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100vh;
 }
 
@@ -247,11 +254,12 @@ h2 .line {
 .about-block {
   margin-top: 3rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .about-text {
-  width: 55%;
+  width: 45%;
+  margin-right: 5%;
 }
 
 /* Show more/less button and text */
@@ -271,13 +279,13 @@ h2 .line {
 /* end of show more/less */
 
 .about-img {
-  width: 40%;
+  max-width: 40%;
   height: auto;
 }
 
 .about-img img {
-  width: 20rem;
-  height: auto;
+  max-width: auto;
+  max-height: 20rem;
   border-radius: 10px;
   filter: saturate(0);
   transition: 0.5s;
@@ -546,6 +554,12 @@ footer {
 
 /* NAV Transition Effect */
 
+.logo-link {
+  margin-left: 2rem;
+  transition-delay: 1000ms;
+  filter: saturate(0);
+}
+
 nav li:nth-child(1) {
   transition-delay: 3000ms;
 }
@@ -634,17 +648,8 @@ nav li:nth-child(5) {
 }
 
 .splash.display-none {
-  position: fixed;
   opacity: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: var(--lightblack);
   z-index: 200;
-  color: var(--white);
-  text-align: center;
-  line-height: 90vh;
   z-index: -200;
   transition: 1s;
 }
@@ -660,3 +665,5 @@ nav li:nth-child(5) {
   animation: fadeIn 1s ease-in forwards;
   color: var(--white);
 }
+
+/* MEDIA QUERIES */
