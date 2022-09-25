@@ -29,6 +29,7 @@ body {
 
 main {
   width: 70%;
+  max-width: 1400px;
   margin: auto;
 }
 
@@ -195,12 +196,12 @@ nav span {
 #welcome-section {
   display: flex;
   align-items: center;
-  justify-content: center;
   height: 100vh;
 }
 
 .intro-text {
   margin-bottom: 3rem;
+  width: 80%;
 }
 
 .intro-p1 {
