@@ -6,8 +6,27 @@ document.addEventListener('DOMContentLoaded', (e) => {
   setTimeout(() => {
     splash.classList.add('display-none');
   }, 2000);
-  splash.style.display = none;
 });
+
+// MOBILE NAV
+
+const mobileNav = document.querySelector('.mobile-nav');
+const navMenu = document.querySelector('.nav-menu');
+const mainElement = document.getElementById('main');
+
+mobileNav.addEventListener('click', () => {
+  mobileNav.classList.toggle('active');
+  navMenu.classList.toggle('active');
+  mainElement.classList.toggle('blur');
+});
+
+document.querySelectorAll('.nav-link').forEach((link) =>
+  link.addEventListener('click', () => {
+    mobileNav.classList.remove('active');
+    navMenu.classList.remove('active');
+    mainElement.classList.remove('blur');
+  })
+);
 
 // ABOUT-SECTION
 
