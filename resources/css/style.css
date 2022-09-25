@@ -34,12 +34,6 @@ main {
   transition: 1s;
 }
 
-html,
-body,
-main {
-  overflow-x: hidden;
-}
-
 header,
 footer,
 section {
