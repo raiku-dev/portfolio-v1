@@ -19,13 +19,12 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  width: 100vw;
 }
 
 body {
   background-color: var(--black);
   width: 100vw;
-  overflow-x: hidden;
 }
 
 main {
@@ -33,6 +32,12 @@ main {
   max-width: 1000px;
   margin: auto;
   transition: 1s;
+}
+
+html,
+body,
+main {
+  overflow-x: hidden;
 }
 
 header,

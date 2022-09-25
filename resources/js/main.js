@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
   setTimeout(() => {
     splash.classList.add('display-none');
   }, 2000);
+  setTimeout(() => {
+    splash.style.display = 'none';
+  }, 4000);
 });
 
 // MOBILE NAV
