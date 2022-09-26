@@ -947,4 +947,10 @@ nav li:nth-child(5) {
   h2 .line {
     display: none;
   }
+
+  .about-img img,
+  #img-border {
+    width: 17rem;
+    height: 17rem;
+  }
 }
