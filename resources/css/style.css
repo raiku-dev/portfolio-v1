@@ -37,6 +37,8 @@ main {
 .wrapper {
   overflow-x: hidden;
   position: relative;
+  width: 100%;
+  margin: auto;
 }
 
 header,
