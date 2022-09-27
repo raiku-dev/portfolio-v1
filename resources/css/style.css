@@ -840,6 +840,22 @@ nav li:nth-child(5) {
   .nav-menu.active {
     right: 0;
   }
+
+  .intro-text .hiddenL:nth-child(1) {
+    transition-delay: 2100ms;
+  }
+
+  .intro-text .hiddenL:nth-child(2) {
+    transition-delay: 2300ms;
+  }
+
+  .intro-text .hiddenL:nth-child(3) {
+    transition-delay: 2500ms;
+  }
+
+  .intro-text .hiddenL:nth-child(4) {
+    transition-delay: 2700ms;
+  }
 }
 
 @media screen and (max-width: 630px) {
