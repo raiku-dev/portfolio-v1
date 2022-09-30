@@ -99,7 +99,6 @@ header {
 .logo {
   height: 2.7rem;
   width: auto;
-  border-radius: 50%;
 }
 
 .desktop-nav {
@@ -618,7 +617,7 @@ footer {
 .logo-link {
   margin-left: 2rem;
   transition-delay: 1000ms;
-  filter: saturate(0);
+  background-image: none;
 }
 
 nav li:nth-child(1) {
