@@ -1,58 +1,577 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./resources/css/normalize.css" />
+		<link rel="stylesheet" href="./resources/css/style.css" />
+		<script src="./resources/js/main.js" defer></script>
+		<link
+			rel="icon"
+			href="./resources/images/portfolio-favicon.png"
+			type="image/x-icon"
+		/>
+		<link
+			rel="mask-icon"
+			href="./resources/images/portfolio-favicon.png"
+			type="image/x-icon"
+		/>
+		<title>Mikayil - Full Stack Developer</title>
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport"
-		content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap"
-		rel="stylesheet" />
-	<link rel="stylesheet" href="./resources/css/normalize.css" />
-	<link rel="stylesheet" href="./resources/css/style.css" />
-	<script src="./resources/js/main.js" defer></script>
-	<link rel="icon" href="./resources/images/portfolio-favicon.png" type="image/x-icon" />
-	<link rel="mask-icon" href="./resources/images/portfolio-favicon.png" type="image/x-icon" />
-	<title>Mikayil - Full Stack Developer</title>
-</head>
+	<body>
+		<header class="hidden hiddenT">
+			<a href="#welcome-section" class="hidden hiddenT logo-link">
+				<img
+					class="hidden hiddenT logo"
+					src="./resources/images/portfolio-logo-transparent.png"
+					alt="Mikayil logo"
+				/>
+			</a>
+			<nav class="desktop-nav">
+				<ul class="nav-menu">
+					<li class="hidden hiddenT nav-link">
+						<span>01.</span><a href="#welcome-section">Home</a>
+					</li>
+					<li class="hidden hiddenT nav-link">
+						<span>02.</span><a href="#about-section">About</a>
+					</li>
+					<li class="hidden hiddenT nav-link">
+						<span>03.</span><a href="#skills-section">Skills</a>
+					</li>
+					<li class="hidden hiddenT nav-link">
+						<span>04.</span><a href="#project-section">Projects</a>
+					</li>
+					<li class="hidden hiddenT nav-link">
+						<span>05.</span><a href="#contact-section">Contact</a>
+					</li>
+				</ul>
+				<div class="hidden hiddenT mobile-nav">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			</nav>
+		</header>
+		<main id="main">
+			<div class="wrapper">
+				<div class="hidden hiddenB social-media">
+					<a target="_blank" href="https://github.com/raiku-dev">
+						<svg
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<title />
+							<g data-name="Github 1" id="Github_1">
+								<g data-name="&lt;Group&gt;" id="_Group_">
+									<path
+										d="M12,.5A11.5,11.5,0,0,0,.5,12a11.82,11.82,0,0,0,9,11.5v-3h-1c-2.62,0-3.54-4-5-4,2.79,0,3.33,2,5,2a.89.89,0,0,0,1-1v-.35c-2.91-.82-5-3-5-5.65A5.26,5.26,0,0,1,6.07,7.84,3.16,3.16,0,0,1,6.5,4.5,5.26,5.26,0,0,1,8.88,6a9.14,9.14,0,0,1,6.24,0A5.26,5.26,0,0,1,17.5,4.5a3.16,3.16,0,0,1,.43,3.34A5.26,5.26,0,0,1,19.5,11.5c0,2.74-2.29,5-5.42,5.76a4.68,4.68,0,0,1,.42,2.24v4a11.82,11.82,0,0,0,9-11.5A11.5,11.5,0,0,0,12,.5Z"
+										data-name="&lt;Path&gt;"
+										id="_Path_"
+										style="
+											fill: none;
+											stroke-linecap: round;
+											stroke-linejoin: round;
+										"
+									/>
+								</g>
+							</g>
+						</svg>
+					</a>
+					<a
+						target="_blank"
+						href="https://www.linkedin.com/in/raiku-dev/"
+					>
+						<svg
+							enable-background="new 0 0 183.836 179.8984"
+							id="linkedin"
+							version="1.1"
+							viewBox="0 0 183.836 179.8984"
+							xml:space="preserve"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+						>
+							<g>
+								<path
+									d="M21.5663,0C9.0703,0,0,8.6172,0,20.488c0,11.8636,8.8907,20.4748,21.1367,20.4748c6.3516,0,11.8244-2.0584,15.828-5.9552   c3.84-3.738,5.9572-8.8944,5.9532-14.6132C42.6367,8.3868,33.8555,0,21.5663,0z M31.3867,29.2732   c-2.4804,2.4144-6.0272,3.6896-10.25,3.6896C13.4023,32.9628,8,27.834,8,20.488C8,13.0196,13.4531,8,21.5663,8   c7.9337,0,13.172,4.9392,13.3516,12.49C34.9179,23.9376,33.664,27.0564,31.3867,29.2732z"
+								/>
+								<path
+									d="M3.836,179.8984h35.9531V47.7208H3.836V179.8984z M11.836,55.7208h19.9531v116.1776H11.836V55.7208z"
+								/>
+								<path
+									d="M134.5939,47.7208c-16.672,0-26.8792,5.7536-32.7932,11.166l-1.1247-11.166H60v132.1776h39.836v-69.4708   c0-2.992,1.2107-9.2052,1.9727-10.8456c4.8124-10.3652,11.3044-10.3652,21.1364-10.3652c11.3244,0,20.8909,10.6192,20.8909,23.1876   v67.494h40v-74.6816C183.836,65.7128,158.3087,47.7208,134.5939,47.7208z M175.836,171.8984h-24v-59.494   c0-16.9064-13.2305-31.1876-28.8909-31.1876c-10.0468,0-21.4336,0-28.3944,14.998c-1.4376,3.0996-2.7147,10.5292-2.7147,14.2128   v61.4708H68V55.7208h25.4415l1.6328,16.1776h6.5544l1.172-1.8908c2.668-4.2948,11.1056-14.2868,31.7932-14.2868   c19.8632,0,41.2421,15.488,41.2421,49.496V171.8984z"
+								/>
+							</g>
+						</svg>
+					</a>
+					<!-- <a target="_blank" href="https://twitter.com/home"> -->
+					<!-- 	<svg data-name="Layer 1" id="Layer_1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"> -->
+					<!-- 		<title /> -->
+					<!-- 		<path class="cls-1" -->
+					<!-- 			d="M86.94,30.66a19.58,19.58,0,0,1,14,6.17s7.64-1.5,11.86-4.47c0,0-1.06,5.88-8.09,10.38h.06c.54,0,4.48-.1,10.68-3,0,0-1.19,3.39-9.3,9.84v0c.49,15.26-7.06,43.47-35,53.51A56.36,56.36,0,0,1,52,106.52,53.69,53.69,0,0,1,22.5,97.85C24,98,25.35,98,26.7,98c16.52,0,24.52-8.48,24.08-8.48h-.61c-14,0-17.41-13.4-17.41-13.4a6.46,6.46,0,0,0,3.73.92,20.4,20.4,0,0,0,5-.73c-15.8-3.74-15.21-18.9-15.21-18.9a13.45,13.45,0,0,0,7.2,2.26,7,7,0,0,0,1.26-.1C20.31,48.15,29,34.52,29,34.52c16.26,18.87,36.25,19.54,39,19.54h.33c-1.48-8.86,2.17-17.37,12-22a15.35,15.35,0,0,1,6.54-1.4M106.2,49.6v0M122,18l-12.93,9.08a23.93,23.93,0,0,1-6.34,2.65,26.16,26.16,0,0,0-15.83-5.54h0a21.69,21.69,0,0,0-9.3,2c-9.18,4.31-14.76,11.75-15.87,20.68A49.25,49.25,0,0,1,33.94,30.28l-5.7-6.61L23.54,31a25.19,25.19,0,0,0-3.4,16.66l-.37,9.53a26.24,26.24,0,0,0,5.69,16.68l1,3.9a26.17,26.17,0,0,0,8.36,12.89,37.24,37.24,0,0,1-8.13.86c-1.19,0-2.42-.05-3.66-.15L.1,89.46l18.55,13.63A60.21,60.21,0,0,0,52,113a63,63,0,0,0,21.38-3.8,57.06,57.06,0,0,0,31.7-27.91,68.92,68.92,0,0,0,7.57-28.65c6.63-5.71,8.45-9.35,8.94-10.74l5.12-14.57-7,3.26L122,18Z" /> -->
+					<!-- 	</svg> -->
+					<!-- </a> -->
+					<div class="line"></div>
+				</div>
+				<div class="hidden hiddenB email">
+					<a
+						target="_blank"
+						href="mailto:mikayil_gacek@icloud.com"
+						class="hidden pink"
+					>
+						mikayil_gacek(at)icloud.com
+					</a>
+					<div class="hidden line"></div>
+				</div>
+				<section id="welcome-section">
+					<div class="hidden hiddenL intro-text">
+						<p class="hidden hiddenL pink intro-p1">
+							Hi, my name is
+						</p>
+						<h1 class="hidden hiddenL white">
+							Mikayil Gacek.<br />
+							<span class="hidden lightgray">
+								I build things for
+								<span>the web.</span>
+							</span>
+						</h1>
+						<p class="hidden hiddenL gray intro-bio">
+							I'm a Full Stack Developer specialized in web-,
+							software- and mobile development.<br />
+							I build software which is pleasing to the eye and
+							even more pleasing to use.<br /><br />
 
-<body>
-	<header class="hidden hiddenT">
-		<a href="#welcome-section" class="hidden hiddenT logo-link">
-			<img class="hidden hiddenT logo" src="./resources/images/portfolio-logo-transparent.png"
-				alt="Mikayil logo" />
-		</a>
-		<nav class="desktop-nav">
-			<ul class="nav-menu">
-				<li class="hidden hiddenT nav-link">
-					<span>01.</span><a href="#welcome-section">Home</a>
-				</li>
-				<li class="hidden hiddenT nav-link">
-					<span>02.</span><a href="#about-section">About</a>
-				</li>
-				<li class="hidden hiddenT nav-link">
-					<span>03.</span><a href="#skills-section">Skills</a>
-				</li>
-				<li class="hidden hiddenT nav-link">
-					<span>04.</span><a href="#project-section">Projects</a>
-				</li>
-				<li class="hidden hiddenT nav-link">
-					<span>05.</span><a href="#contact-section">Contact</a>
-				</li>
-			</ul>
-			<div class="hidden hiddenT mobile-nav">
-				<span class="bar"></span>
-				<span class="bar"></span>
-				<span class="bar"></span>
+							I love being a Developer and I'm always looking for
+							new challenges to solve.<br />
+							<span class="white">
+								If you think I'm a good fit for your team:
+								<a
+									href="#contact-section"
+									class="hidden pink"
+									title="Contact me"
+								>
+									let's have some coffee!
+								</a> </span
+							><br />
+						</p>
+					</div>
+				</section>
+				<section id="about-section">
+					<h2 class="hidden white">
+						<span class="hidden hiddenL pink">02.</span>About Me
+						<div class="hidden hiddenR line"></div>
+					</h2>
+					<div class="about-block">
+						<div class="hidden hiddenL about-text">
+							<h3>Who am I?</h3>
+							<p>
+								Hello! I’m Mikayil, and I have a passion for
+								creating software and websites that not only
+								look great but work seamlessly.
+							</p>
+							<br />
+
+							<div class="hidden bio-extended hide">
+								<h3>Inspiration</h3>
+								<p>
+									My journey into coding was inspired by Apple
+									products, especially by the vision of Steve
+									Jobs. I’m captivated by how Apple products
+									effortlessly integrate and provide an
+									exceptional user experience.
+								</p>
+								<br />
+
+								<h3>The Computer Kid</h3>
+								<p>
+									Looking back, I wish I had started coding
+									earlier. I’ve always been fascinated by
+									computers and curious about how they work.
+									My first real connection with computers came
+									through video games. At the age of 12, I
+									built my first gaming PC. It wasn’t anything
+									extraordinary, but I was proud that I
+									managed to put it together with the help of
+									a YouTube tutorial. That experience sparked
+									an obsession with optimizing, customizing,
+									and personalizing my system (probably the
+									reason why I’m using NeoVim as my
+									Text-Editor / IDE and why I got into the
+									Linux world). I became the go-to kid for
+									computer advice and troubleshooting.
+								</p>
+								<br />
+
+								<h3>First Steps in Programming</h3>
+								<p>
+									A few years later, I found myself deep in
+									Apple’s ecosystem. My initial foray into
+									programming began with Swift, using an
+									iPhone app, and later completing the “Learn
+									Swift” course in Swift Playgrounds. By then,
+									I had a basic grasp of Swift syntax and
+									fundamental programming concepts like
+									If/Else statements and loops. However, I
+									quickly realized I needed a stronger
+									foundation, and that’s when I discovered
+									FreeCodeCamp. It’s an incredible resource
+									for beginners, and I highly recommend it. I
+									also explored The Odin Project, which is a
+									bit more challenging at first but does an
+									excellent job of preparing you to work like
+									a professional developer.
+								</p>
+								<br />
+
+								<h3>Time to Get Serious</h3>
+								<p>
+									After completing these free courses and
+									earning certifications in HTML, CSS, and
+									JavaScript, I still felt like some concepts
+									weren’t fully clicking for me. So, I decided
+									to invest in my education and try a paid
+									option that offered a “Full-Stack Developer
+									Career Path” with a well-structured
+									curriculum. That’s when I turned to
+									Codecademy. It turned out to be exactly what
+									I needed. The course structure, with its mix
+									of guided mini-projects and larger,
+									independent portfolio projects, really
+									helped me absorb the material and made
+									everything start to fall into place.
+								</p>
+								<br />
+							</div>
+							<a class="pink show-btn">
+								Show my life story (basically)
+								<img
+									class="arrow"
+									src="./resources/images/arrow-down.svg"
+								/>
+							</a>
+							<br /><br />
+							<p>
+								Now, I’m focusing on refining my skills and
+								challenging myself even further. I’m excited to
+								tackle more complex projects and deepen my
+								understanding of full stack development and
+								lower level concepts. The journey has been
+								challenging but incredibly rewarding, and I’m
+								eager to see where it takes me next. Whether
+								it’s creating sleek websites or developing
+								robust software, I’m driven by the thrill of
+								turning ideas into reality. The possibilities
+								are endless, and I can’t wait to keep exploring
+								them.
+								<br /><br />
+								I feel like Software Engineering is what I was
+								always meant to do. ❤️
+							</p>
+						</div>
+						<div class="hidden hiddenR about-img">
+							<img
+								src="./resources/images/bio-img.jpeg"
+								alt="Mikayil Gacek"
+							/>
+							<div class="img-border" id="img-border"></div>
+						</div>
+					</div>
+				</section>
+				<section id="skills-section">
+					<h2 class="hidden white">
+						<span class="hidden hiddenL pink">03.</span>Skills &
+						Tech
+						<div class="hidden hiddenR line"></div>
+					</h2>
+					<div class="hidden skills-container">
+						<div class="hidden skill-element">
+							<img
+								src="./resources/images/Svelte_Logo.svg"
+								alt="SvelteKit"
+							/>
+							<span class="lightgray">SvelteKit</span>
+						</div>
+						<div class="hidden skill-element">
+							<img
+								src="./resources/images/js.png"
+								class="hidden js-icon"
+								alt="JavaScript"
+							/>
+							<span class="lightgray">JavaScript</span>
+						</div>
+						<div class="hidden skill-element">
+							<img
+								src="./resources/images/PHP-logo.svg"
+								alt="PHP"
+							/>
+							<span class="lightgray">PHP</span>
+						</div>
+						<div class="hidden skill-element">
+							<img
+								src="./resources/images/Bash_Logo_White.svg"
+								alt="Bash"
+							/>
+							<span class="lightgray">Bash / Linux Shell</span>
+						</div>
+						<div class="hidden skill-element">
+							<img
+								src="./resources/images/Vimlogo.svg"
+								alt="Vim / NeoVim"
+							/>
+							<span class="lightgray">Vim / NeoVim</span>
+						</div>
+						<div class="hidden skill-element">
+							<img src="./resources/images/git.png" alt="Git" />
+							<span class="lightgray">Git</span>
+						</div>
+						<div class="hidden skill-element">
+							<img
+								src="./resources/images/github.png"
+								class="hidden github-icon"
+								alt="Github"
+							/>
+							<span class="lightgray">GitHub</span>
+						</div>
+						<div class="hidden skill-element">
+							<img
+								src="./resources/images/css-3.png"
+								alt="CSS3"
+							/>
+							<span class="lightgray">CSS 3</span>
+						</div>
+						<div class="hidden skill-element">
+							<img
+								src="./resources/images/html-5.png"
+								alt="HTML5"
+							/>
+							<span class="lightgray">HTML 5</span>
+						</div>
+						<div class="hidden skill-element">
+							<img
+								src="./resources/images/vscode.png"
+								alt="VS Code"
+							/>
+							<span class="lightgray">VS Code</span>
+						</div>
+					</div>
+				</section>
+				<section id="project-section">
+					<h2 class="hidden white">
+						<span class="hidden hiddenL pink">04.</span>Projects
+						<div class="hidden hiddenR line"></div>
+					</h2>
+					<div class="disclaimer hidden hiddenB">
+						<p>
+							Thank you for visiting my portfolio! I’m currently
+							in the process of updating my projects and refining
+							my GitHub repositories to better reflect my skills
+							and recent work. Please check back soon to see my
+							latest developments. In the meantime, feel free to
+							connect with me directly if you have any questions
+							or would like to discuss potential opportunities.
+							I’m excited to share my work with you soon!
+						</p>
+						<br />
+					</div>
+					<!-- <div class="hidden featured-container"> -->
+					<!-- 	<div class="hidden hiddenL featured-image"> -->
+					<!-- 		<a href="#welcome-section"><img src="./resources/images/portfolio.png" -->
+					<!-- 				alt="image of this portfolio" /></a> -->
+					<!-- 	</div> -->
+					<!-- 	<div class="hidden hiddenR featured-text"> -->
+					<!-- 		<span>Featured Project</span> -->
+					<!-- 		<h3>Portfolio Website</h3> -->
+					<!-- 		<div class="hidden project-description"> -->
+					<!-- 			<p> -->
+					<!-- 				As a challenge project for Codecademy's -->
+					<!-- 				Full-Stack-Developer path I chose to -->
+					<!-- 				recreate -->
+					<!-- 				<a class="hidden pink" href="https://brittanychiang.com">Brittany Chiang's</a> -->
+					<!-- 				amazing portfolio in my own code with some -->
+					<!-- 				alterations. This project helped me solidify -->
+					<!-- 				and expand my skills especially on the -->
+					<!-- 				front-end. -->
+					<!-- 			</p> -->
+					<!-- 		</div> -->
+					<!-- 		<ul> -->
+					<!-- 			<li>HTML</li> -->
+					<!-- 			<li>CSS</li> -->
+					<!-- 			<li>JavaScript</li> -->
+					<!-- 		</ul> -->
+					<!-- 		<div class="hidden project-links"> -->
+					<!-- 			<a target="_blank" href="https://github.com/raiku-dev/portfolio-v1"> -->
+					<!-- 				<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> -->
+					<!-- 					<title /> -->
+					<!-- 					<g data-name="Github 1" id="Github_1"> -->
+					<!-- 						<g data-name="&lt;Group&gt;" id="_Group_"> -->
+					<!-- 							<path -->
+					<!-- 								d="M12,.5A11.5,11.5,0,0,0,.5,12a11.82,11.82,0,0,0,9,11.5v-3h-1c-2.62,0-3.54-4-5-4,2.79,0,3.33,2,5,2a.89.89,0,0,0,1-1v-.35c-2.91-.82-5-3-5-5.65A5.26,5.26,0,0,1,6.07,7.84,3.16,3.16,0,0,1,6.5,4.5,5.26,5.26,0,0,1,8.88,6a9.14,9.14,0,0,1,6.24,0A5.26,5.26,0,0,1,17.5,4.5a3.16,3.16,0,0,1,.43,3.34A5.26,5.26,0,0,1,19.5,11.5c0,2.74-2.29,5-5.42,5.76a4.68,4.68,0,0,1,.42,2.24v4a11.82,11.82,0,0,0,9-11.5A11.5,11.5,0,0,0,12,.5Z" -->
+					<!-- 								data-name="&lt;Path&gt;" id="_Path_" style=" -->
+					<!--                                                     fill: none; -->
+					<!--                                                     stroke-linecap: round; -->
+					<!--                                                     stroke-linejoin: round; -->
+					<!--                                                 " /> -->
+					<!-- 						</g> -->
+					<!-- 					</g> -->
+					<!-- 				</svg> -->
+					<!-- 			</a> -->
+					<!-- 			<a href="#welcome-section"> -->
+					<!-- 				<svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" -->
+					<!-- 					width="128px" height="128px"> -->
+					<!-- 					<path -->
+					<!-- 						d="M97,104V59c0-1.7-1.3-3-3-3s-3,1.3-3,3v45c0,3.9-3.1,7-7,7H24c-3.9,0-7-3.1-7-7V44c0-3.9,3.1-7,7-7h45c1.7,0,3-1.3,3-3 s-1.3-3-3-3H24c-7.2,0-13,5.8-13,13v60c0,7.2,5.8,13,13,13h60C91.2,117,97,111.2,97,104z" /> -->
+					<!-- 					<path -->
+					<!-- 						d="M114,47c1.7,0,3-1.3,3-3V14c0-1.7-1.3-3-3-3H84c-1.7,0-3,1.3-3,3s1.3,3,3,3h22.8L60.4,63.4c-1.2,1.2-1.2,3.1,0,4.2 c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9L111,21.2V44C111,45.7,112.3,47,114,47z" /> -->
+					<!-- 				</svg> -->
+					<!-- 			</a> -->
+					<!-- 		</div> -->
+					<!-- 	</div> -->
+					<!-- </div> -->
+					<!-- <div class="hidden featured-container"> -->
+					<!-- 	<div class="hidden hiddenL featured-text ft-text-left"> -->
+					<!-- 		<span>Featured Project</span> -->
+					<!-- 		<h3>Lottery Number Generator</h3> -->
+					<!-- 		<div class="hidden project-description"> -->
+					<!-- 			<p> -->
+					<!-- 				This lottery number generator was meant to -->
+					<!-- 				be a console only project but I wanted to -->
+					<!-- 				provide a simple front-end to make the -->
+					<!-- 				interaction with it easier. It takes -->
+					<!-- 				user-inputs and randomizes the numbers in -->
+					<!-- 				ranges based on the inputs. -->
+					<!-- 			</p> -->
+					<!-- 		</div> -->
+					<!-- 		<ul> -->
+					<!-- 			<li>HTML</li> -->
+					<!-- 			<li>CSS</li> -->
+					<!-- 			<li>JavaScript</li> -->
+					<!-- 		</ul> -->
+					<!-- 		<div class="hidden project-links"> -->
+					<!-- 			<a target="_blank" href="https://github.com/raiku-dev/cc-18-lottery-number-generator/"> -->
+					<!-- 				<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> -->
+					<!-- 					<title /> -->
+					<!-- 					<g data-name="Github 1" id="Github_1"> -->
+					<!-- 						<g data-name="&lt;Group&gt;" id="_Group_"> -->
+					<!-- 							<path -->
+					<!-- 								d="M12,.5A11.5,11.5,0,0,0,.5,12a11.82,11.82,0,0,0,9,11.5v-3h-1c-2.62,0-3.54-4-5-4,2.79,0,3.33,2,5,2a.89.89,0,0,0,1-1v-.35c-2.91-.82-5-3-5-5.65A5.26,5.26,0,0,1,6.07,7.84,3.16,3.16,0,0,1,6.5,4.5,5.26,5.26,0,0,1,8.88,6a9.14,9.14,0,0,1,6.24,0A5.26,5.26,0,0,1,17.5,4.5a3.16,3.16,0,0,1,.43,3.34A5.26,5.26,0,0,1,19.5,11.5c0,2.74-2.29,5-5.42,5.76a4.68,4.68,0,0,1,.42,2.24v4a11.82,11.82,0,0,0,9-11.5A11.5,11.5,0,0,0,12,.5Z" -->
+					<!-- 								data-name="&lt;Path&gt;" id="_Path_" style=" -->
+					<!--                                                     fill: none; -->
+					<!--                                                     stroke-linecap: round; -->
+					<!--                                                     stroke-linejoin: round; -->
+					<!--                                                 " /> -->
+					<!-- 						</g> -->
+					<!-- 					</g> -->
+					<!-- 				</svg> -->
+					<!-- 			</a> -->
+					<!-- 			<a target="_blank" href="https://raiku-dev.github.io/cc-18-lottery-number-generator/"> -->
+					<!-- 				<svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" -->
+					<!-- 					width="128px" height="128px"> -->
+					<!-- 					<path -->
+					<!-- 						d="M97,104V59c0-1.7-1.3-3-3-3s-3,1.3-3,3v45c0,3.9-3.1,7-7,7H24c-3.9,0-7-3.1-7-7V44c0-3.9,3.1-7,7-7h45c1.7,0,3-1.3,3-3 s-1.3-3-3-3H24c-7.2,0-13,5.8-13,13v60c0,7.2,5.8,13,13,13h60C91.2,117,97,111.2,97,104z" /> -->
+					<!-- 					<path -->
+					<!-- 						d="M114,47c1.7,0,3-1.3,3-3V14c0-1.7-1.3-3-3-3H84c-1.7,0-3,1.3-3,3s1.3,3,3,3h22.8L60.4,63.4c-1.2,1.2-1.2,3.1,0,4.2 c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9L111,21.2V44C111,45.7,112.3,47,114,47z" /> -->
+					<!-- 				</svg> -->
+					<!-- 			</a> -->
+					<!-- 		</div> -->
+					<!-- 	</div> -->
+					<!-- 	<div class="hidden hiddenR featured-image"> -->
+					<!-- 		<a target="_blank" href="https://raiku-dev.github.io/cc-18-lottery-number-generator/"><img -->
+					<!-- 				src="./resources/images/lottery.png" alt="image of lottery number generator" /></a> -->
+					<!-- 	</div> -->
+					<!-- </div> -->
+					<!-- <div class="hidden featured-container"> -->
+					<!-- 	<div class="hidden hiddenL featured-image"> -->
+					<!-- 		<a target="_blank" href="https://raiku-dev.github.io/cc-16-company-homepage/"><img -->
+					<!-- 				src="./resources/images/company-homepage.png" alt="Image of company landing page" /></a> -->
+					<!-- 	</div> -->
+					<!-- 	<div class="hidden hiddenR featured-text"> -->
+					<!-- 		<span>Featured Project</span> -->
+					<!-- 		<h3>Company Landing Page</h3> -->
+					<!-- 		<div class="hidden project-description"> -->
+					<!-- 			<p> -->
+					<!-- 				This is a landing page for a fictive -->
+					<!-- 				business made only with HTML and CSS. The -->
+					<!-- 				Goal was to make a simple website with some -->
+					<!-- 				relevant information about the business. -->
+					<!-- 			</p> -->
+					<!-- 		</div> -->
+					<!-- 		<ul> -->
+					<!-- 			<li>HTML</li> -->
+					<!-- 			<li>CSS</li> -->
+					<!-- 		</ul> -->
+					<!-- 		<div class="hidden project-links"> -->
+					<!-- 			<a target="_blank" href="https://github.com/raiku-dev/cc-16-company-homepage"> -->
+					<!-- 				<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> -->
+					<!-- 					<title /> -->
+					<!-- 					<g data-name="Github 1" id="Github_1"> -->
+					<!-- 						<g data-name="&lt;Group&gt;" id="_Group_"> -->
+					<!-- 							<path -->
+					<!-- 								d="M12,.5A11.5,11.5,0,0,0,.5,12a11.82,11.82,0,0,0,9,11.5v-3h-1c-2.62,0-3.54-4-5-4,2.79,0,3.33,2,5,2a.89.89,0,0,0,1-1v-.35c-2.91-.82-5-3-5-5.65A5.26,5.26,0,0,1,6.07,7.84,3.16,3.16,0,0,1,6.5,4.5,5.26,5.26,0,0,1,8.88,6a9.14,9.14,0,0,1,6.24,0A5.26,5.26,0,0,1,17.5,4.5a3.16,3.16,0,0,1,.43,3.34A5.26,5.26,0,0,1,19.5,11.5c0,2.74-2.29,5-5.42,5.76a4.68,4.68,0,0,1,.42,2.24v4a11.82,11.82,0,0,0,9-11.5A11.5,11.5,0,0,0,12,.5Z" -->
+					<!-- 								data-name="&lt;Path&gt;" id="_Path_" style=" -->
+					<!--                                                     fill: none; -->
+					<!--                                                     stroke-linecap: round; -->
+					<!--                                                     stroke-linejoin: round; -->
+					<!--                                                 " /> -->
+					<!-- 						</g> -->
+					<!-- 					</g> -->
+					<!-- 				</svg> -->
+					<!-- 			</a> -->
+					<!-- 			<a target="_blank" href="https://raiku-dev.github.io/cc-16-company-homepage/"> -->
+					<!-- 				<svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" -->
+					<!-- 					width="128px" height="128px"> -->
+					<!-- 					<path -->
+					<!-- 						d="M97,104V59c0-1.7-1.3-3-3-3s-3,1.3-3,3v45c0,3.9-3.1,7-7,7H24c-3.9,0-7-3.1-7-7V44c0-3.9,3.1-7,7-7h45c1.7,0,3-1.3,3-3 s-1.3-3-3-3H24c-7.2,0-13,5.8-13,13v60c0,7.2,5.8,13,13,13h60C91.2,117,97,111.2,97,104z" /> -->
+					<!-- 					<path -->
+					<!-- 						d="M114,47c1.7,0,3-1.3,3-3V14c0-1.7-1.3-3-3-3H84c-1.7,0-3,1.3-3,3s1.3,3,3,3h22.8L60.4,63.4c-1.2,1.2-1.2,3.1,0,4.2 c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9L111,21.2V44C111,45.7,112.3,47,114,47z" /> -->
+					<!-- 				</svg> -->
+					<!-- 			</a> -->
+					<!-- 		</div> -->
+					<!-- 	</div> -->
+					<!-- </div> -->
+					<a
+						href="https://github.com/raiku-dev/"
+						class="hidden btn-a"
+						target="_blank"
+					>
+						<button class="hidden btn">View more on GitHub</button>
+					</a>
+				</section>
+				<section id="contact-section">
+					<span class="hidden hiddenB">05. What's Next?</span>
+					<h2 class="hidden hiddenB white">
+						How do you like your coffee?
+					</h2>
+					<p class="hidden hiddenB">
+						If my portfolio sparked your interest and you'd like to
+						work with me, do not hesitate to contact me.<br />
+						My passion and willingness to learn will let me add
+						value to your team on day one!<br />
+						I cannot wait to take on a Developer role in your
+						company!
+					</p>
+
+					<a
+						class="hidden hiddenB btn-a"
+						href="mailto:mikayil_gacek@icloud.com"
+						><button class="hidden btn">
+							Let's get to know each other!
+						</button></a
+					>
+				</section>
 			</div>
-		</nav>
-	</header>
-	<main id="main">
-		<div class="wrapper">
-			<div class="hidden hiddenB social-media">
+		</main>
+		<footer>
+			<div class="hidden hiddenB social-media-footer">
 				<a target="_blank" href="https://github.com/raiku-dev">
 					<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 						<title />
@@ -60,485 +579,71 @@
 							<g data-name="&lt;Group&gt;" id="_Group_">
 								<path
 									d="M12,.5A11.5,11.5,0,0,0,.5,12a11.82,11.82,0,0,0,9,11.5v-3h-1c-2.62,0-3.54-4-5-4,2.79,0,3.33,2,5,2a.89.89,0,0,0,1-1v-.35c-2.91-.82-5-3-5-5.65A5.26,5.26,0,0,1,6.07,7.84,3.16,3.16,0,0,1,6.5,4.5,5.26,5.26,0,0,1,8.88,6a9.14,9.14,0,0,1,6.24,0A5.26,5.26,0,0,1,17.5,4.5a3.16,3.16,0,0,1,.43,3.34A5.26,5.26,0,0,1,19.5,11.5c0,2.74-2.29,5-5.42,5.76a4.68,4.68,0,0,1,.42,2.24v4a11.82,11.82,0,0,0,9-11.5A11.5,11.5,0,0,0,12,.5Z"
-									data-name="&lt;Path&gt;" id="_Path_" style="
-                                            fill: none;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                        " />
+									data-name="&lt;Path&gt;"
+									id="_Path_"
+									style="
+										fill: none;
+										stroke-linecap: round;
+										stroke-linejoin: round;
+									"
+								/>
 							</g>
 						</g>
 					</svg>
 				</a>
-				<a target="_blank" href="https://www.linkedin.com/in/raiku-dev/">
-					<svg enable-background="new 0 0 183.836 179.8984" id="linkedin" version="1.1"
-						viewBox="0 0 183.836 179.8984" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink">
+				<a
+					target="_blank"
+					href="https://www.linkedin.com/in/mikayilgx/"
+				>
+					<svg
+						enable-background="new 0 0 183.836 179.8984"
+						id="linkedin"
+						version="1.1"
+						viewBox="0 0 183.836 179.8984"
+						xml:space="preserve"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+					>
 						<g>
 							<path
-								d="M21.5663,0C9.0703,0,0,8.6172,0,20.488c0,11.8636,8.8907,20.4748,21.1367,20.4748c6.3516,0,11.8244-2.0584,15.828-5.9552   c3.84-3.738,5.9572-8.8944,5.9532-14.6132C42.6367,8.3868,33.8555,0,21.5663,0z M31.3867,29.2732   c-2.4804,2.4144-6.0272,3.6896-10.25,3.6896C13.4023,32.9628,8,27.834,8,20.488C8,13.0196,13.4531,8,21.5663,8   c7.9337,0,13.172,4.9392,13.3516,12.49C34.9179,23.9376,33.664,27.0564,31.3867,29.2732z" />
+								d="M21.5663,0C9.0703,0,0,8.6172,0,20.488c0,11.8636,8.8907,20.4748,21.1367,20.4748c6.3516,0,11.8244-2.0584,15.828-5.9552   c3.84-3.738,5.9572-8.8944,5.9532-14.6132C42.6367,8.3868,33.8555,0,21.5663,0z M31.3867,29.2732   c-2.4804,2.4144-6.0272,3.6896-10.25,3.6896C13.4023,32.9628,8,27.834,8,20.488C8,13.0196,13.4531,8,21.5663,8   c7.9337,0,13.172,4.9392,13.3516,12.49C34.9179,23.9376,33.664,27.0564,31.3867,29.2732z"
+							/>
 							<path
-								d="M3.836,179.8984h35.9531V47.7208H3.836V179.8984z M11.836,55.7208h19.9531v116.1776H11.836V55.7208z" />
+								d="M3.836,179.8984h35.9531V47.7208H3.836V179.8984z M11.836,55.7208h19.9531v116.1776H11.836V55.7208z"
+							/>
 							<path
-								d="M134.5939,47.7208c-16.672,0-26.8792,5.7536-32.7932,11.166l-1.1247-11.166H60v132.1776h39.836v-69.4708   c0-2.992,1.2107-9.2052,1.9727-10.8456c4.8124-10.3652,11.3044-10.3652,21.1364-10.3652c11.3244,0,20.8909,10.6192,20.8909,23.1876   v67.494h40v-74.6816C183.836,65.7128,158.3087,47.7208,134.5939,47.7208z M175.836,171.8984h-24v-59.494   c0-16.9064-13.2305-31.1876-28.8909-31.1876c-10.0468,0-21.4336,0-28.3944,14.998c-1.4376,3.0996-2.7147,10.5292-2.7147,14.2128   v61.4708H68V55.7208h25.4415l1.6328,16.1776h6.5544l1.172-1.8908c2.668-4.2948,11.1056-14.2868,31.7932-14.2868   c19.8632,0,41.2421,15.488,41.2421,49.496V171.8984z" />
+								d="M134.5939,47.7208c-16.672,0-26.8792,5.7536-32.7932,11.166l-1.1247-11.166H60v132.1776h39.836v-69.4708   c0-2.992,1.2107-9.2052,1.9727-10.8456c4.8124-10.3652,11.3044-10.3652,21.1364-10.3652c11.3244,0,20.8909,10.6192,20.8909,23.1876   v67.494h40v-74.6816C183.836,65.7128,158.3087,47.7208,134.5939,47.7208z M175.836,171.8984h-24v-59.494   c0-16.9064-13.2305-31.1876-28.8909-31.1876c-10.0468,0-21.4336,0-28.3944,14.998c-1.4376,3.0996-2.7147,10.5292-2.7147,14.2128   v61.4708H68V55.7208h25.4415l1.6328,16.1776h6.5544l1.172-1.8908c2.668-4.2948,11.1056-14.2868,31.7932-14.2868   c19.8632,0,41.2421,15.488,41.2421,49.496V171.8984z"
+							/>
 						</g>
 					</svg>
 				</a>
-				<!-- <a target="_blank" href="https://twitter.com/home"> -->
-				<!-- 	<svg data-name="Layer 1" id="Layer_1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"> -->
-				<!-- 		<title /> -->
-				<!-- 		<path class="cls-1" -->
-				<!-- 			d="M86.94,30.66a19.58,19.58,0,0,1,14,6.17s7.64-1.5,11.86-4.47c0,0-1.06,5.88-8.09,10.38h.06c.54,0,4.48-.1,10.68-3,0,0-1.19,3.39-9.3,9.84v0c.49,15.26-7.06,43.47-35,53.51A56.36,56.36,0,0,1,52,106.52,53.69,53.69,0,0,1,22.5,97.85C24,98,25.35,98,26.7,98c16.52,0,24.52-8.48,24.08-8.48h-.61c-14,0-17.41-13.4-17.41-13.4a6.46,6.46,0,0,0,3.73.92,20.4,20.4,0,0,0,5-.73c-15.8-3.74-15.21-18.9-15.21-18.9a13.45,13.45,0,0,0,7.2,2.26,7,7,0,0,0,1.26-.1C20.31,48.15,29,34.52,29,34.52c16.26,18.87,36.25,19.54,39,19.54h.33c-1.48-8.86,2.17-17.37,12-22a15.35,15.35,0,0,1,6.54-1.4M106.2,49.6v0M122,18l-12.93,9.08a23.93,23.93,0,0,1-6.34,2.65,26.16,26.16,0,0,0-15.83-5.54h0a21.69,21.69,0,0,0-9.3,2c-9.18,4.31-14.76,11.75-15.87,20.68A49.25,49.25,0,0,1,33.94,30.28l-5.7-6.61L23.54,31a25.19,25.19,0,0,0-3.4,16.66l-.37,9.53a26.24,26.24,0,0,0,5.69,16.68l1,3.9a26.17,26.17,0,0,0,8.36,12.89,37.24,37.24,0,0,1-8.13.86c-1.19,0-2.42-.05-3.66-.15L.1,89.46l18.55,13.63A60.21,60.21,0,0,0,52,113a63,63,0,0,0,21.38-3.8,57.06,57.06,0,0,0,31.7-27.91,68.92,68.92,0,0,0,7.57-28.65c6.63-5.71,8.45-9.35,8.94-10.74l5.12-14.57-7,3.26L122,18Z" /> -->
-				<!-- 	</svg> -->
-				<!-- </a> -->
-				<div class="line"></div>
-			</div>
-			<div class="hidden hiddenB email">
-				<a target="_blank" href="mailto:mikayil_gacek@icloud.com" class="hidden pink">
-					mikayil_gacek(at)icloud.com
+				<a target="_blank" href="https://twitter.com/home">
+					<svg
+						data-name="Layer 1"
+						id="Layer_1"
+						viewBox="0 0 128 128"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<title />
+						<path
+							class="cls-1"
+							d="M86.94,30.66a19.58,19.58,0,0,1,14,6.17s7.64-1.5,11.86-4.47c0,0-1.06,5.88-8.09,10.38h.06c.54,0,4.48-.1,10.68-3,0,0-1.19,3.39-9.3,9.84v0c.49,15.26-7.06,43.47-35,53.51A56.36,56.36,0,0,1,52,106.52,53.69,53.69,0,0,1,22.5,97.85C24,98,25.35,98,26.7,98c16.52,0,24.52-8.48,24.08-8.48h-.61c-14,0-17.41-13.4-17.41-13.4a6.46,6.46,0,0,0,3.73.92,20.4,20.4,0,0,0,5-.73c-15.8-3.74-15.21-18.9-15.21-18.9a13.45,13.45,0,0,0,7.2,2.26,7,7,0,0,0,1.26-.1C20.31,48.15,29,34.52,29,34.52c16.26,18.87,36.25,19.54,39,19.54h.33c-1.48-8.86,2.17-17.37,12-22a15.35,15.35,0,0,1,6.54-1.4M106.2,49.6v0M122,18l-12.93,9.08a23.93,23.93,0,0,1-6.34,2.65,26.16,26.16,0,0,0-15.83-5.54h0a21.69,21.69,0,0,0-9.3,2c-9.18,4.31-14.76,11.75-15.87,20.68A49.25,49.25,0,0,1,33.94,30.28l-5.7-6.61L23.54,31a25.19,25.19,0,0,0-3.4,16.66l-.37,9.53a26.24,26.24,0,0,0,5.69,16.68l1,3.9a26.17,26.17,0,0,0,8.36,12.89,37.24,37.24,0,0,1-8.13.86c-1.19,0-2.42-.05-3.66-.15L.1,89.46l18.55,13.63A60.21,60.21,0,0,0,52,113a63,63,0,0,0,21.38-3.8,57.06,57.06,0,0,0,31.7-27.91,68.92,68.92,0,0,0,7.57-28.65c6.63-5.71,8.45-9.35,8.94-10.74l5.12-14.57-7,3.26L122,18Z"
+						/>
+					</svg>
 				</a>
-				<div class="hidden line"></div>
 			</div>
-			<section id="welcome-section">
-				<div class="hidden hiddenL intro-text">
-					<p class="hidden hiddenL pink intro-p1">
-						Hi, my name is
-					</p>
-					<h1 class="hidden hiddenL white">
-						Mikayil Gacek.<br>
-						<span class="hidden lightgray">
-							I build things for
-							<span>the web.</span>
-						</span>
-					</h1>
-					<p class="hidden hiddenL gray intro-bio">
-						I'm a Full Stack Developer specialized in web-, software- and
-						mobile development.<br>
-						I build software which is pleasing to
-						the eye and even more pleasing to use.<br><br>
-
-						I love being a Developer and I'm always looking for new challenges to
-						solve.<br>
-						<span class="white">
-							If you think I'm a good fit for your team:
-							<a href="#contact-section" class="hidden pink" title="Contact me">
-								let's have some coffee!
-							</a>
-						</span><br>
-
-					</p>
-				</div>
-			</section>
-			<section id="about-section">
-				<h2 class="hidden white">
-					<span class="hidden hiddenL pink">02.</span>About Me
-					<div class="hidden hiddenR line"></div>
-				</h2>
-				<div class="about-block">
-					<div class="hidden hiddenL about-text">
-						<h3>Who am I?</h3>
-						<p>
-							Hello! I’m Mikayil, and I have a passion for creating software
-							and websites that not only
-							look great but work seamlessly.
-						</p>
-						<br>
-
-						<div class="hidden bio-extended hide">
-							<h3>Inspiration</h3>
-							<p>
-								My journey into coding was inspired by Apple products,
-								especially by the vision of Steve Jobs. I’m captivated
-								by how Apple products
-								effortlessly
-								integrate and provide an exceptional user experience.
-							</p>
-							<br>
-
-							<h3>The Computer Kid</h3>
-							<p>
-								Looking back, I wish I had started coding earlier. I’ve
-								always been fascinated by
-								computers and curious about how they work. My first real
-								connection with computers came
-								through video games. At the age of 12, I built my first
-								gaming PC. It wasn’t anything
-								extraordinary, but I was proud that I managed to put it
-								together with the help of a
-								YouTube tutorial. That experience sparked an obsession
-								with optimizing, customizing, and
-								personalizing my system (probably the reason why I’m
-								using NeoVim as my Text-Editor /
-								IDE and why I got into the Linux world).
-								I became the go-to kid for computer advice and
-								troubleshooting.
-							</p>
-							<br>
-
-							<h3>First Steps in Programming</h3>
-							<p>
-								A few years later, I found myself deep in Apple’s
-								ecosystem.
-								My initial foray into programming began with Swift,
-								using an iPhone
-								app, and later completing the “Learn Swift” course in
-								Swift Playgrounds. By then, I had
-								a basic grasp of Swift syntax and fundamental
-								programming concepts like If/Else
-								statements and loops. However, I quickly realized I
-								needed a stronger foundation, and
-								that’s when I discovered FreeCodeCamp. It’s an
-								incredible resource for beginners, and I
-								highly recommend it. I also explored The Odin Project,
-								which is a bit more challenging
-								at first but does an excellent job of preparing you to
-								work like a professional
-								developer.
-							</p>
-							<br>
-
-							<h3>Time to Get Serious</h3>
-							<p>
-								After completing these free courses and earning
-								certifications in HTML, CSS, and
-								JavaScript, I still felt like some concepts weren’t
-								fully clicking for me. So, I decided
-								to invest in my education and try a paid option that
-								offered a “Full-Stack Developer
-								Career Path” with a well-structured curriculum. That’s
-								when I turned to Codecademy. It
-								turned out to be exactly what I needed. The course
-								structure, with its mix of guided
-								mini-projects and larger, independent portfolio
-								projects, really helped me absorb the
-								material and made everything start to fall into place.
-							</p>
-							<br>
-						</div>
-						<a class="pink show-btn">
-							Show my life story (basically)
-							<img class="arrow" src="./resources/images/arrow-down.svg" />
-						</a>
-						<br><br>
-						<p>
-							Now, I’m focusing on refining my skills and challenging myself
-							even further. I’m excited to
-							tackle more complex projects and deepen my understanding of full
-							stack development and lower
-							level concepts.
-							The journey has been challenging but incredibly rewarding, and
-							I’m eager to see where it
-							takes me next. Whether it’s creating sleek websites or
-							developing robust software, I’m
-							driven by the thrill of turning ideas into reality. The
-							possibilities are endless, and I
-							can’t wait to keep exploring them.
-							<br><br>
-							I feel like Software Engineering is what I was always meant to
-							do. ❤️
-						</p>
-					</div>
-					<div class="hidden hiddenR about-img">
-						<img src="./resources/images/bio-img.jpeg" alt="Mikayil Gacek" />
-						<div class="img-border" id="img-border"></div>
-					</div>
-				</div>
-			</section>
-			<section id="skills-section">
-				<h2 class="hidden white">
-					<span class="hidden hiddenL pink">03.</span>Skills &
-					Tech
-					<div class="hidden hiddenR line"></div>
-				</h2>
-				<div class="hidden skills-container">
-					<div class="hidden skill-element">
-						<img src="./resources/images/Svelte_Logo.svg" alt="SvelteKit" />
-						<span class="lightgray">SvelteKit</span>
-					</div>
-					<div class="hidden skill-element">
-						<img src="./resources/images/js.png" class="hidden js-icon" alt="JavaScript" />
-						<span class="lightgray">JavaScript</span>
-					</div>
-					<div class="hidden skill-element">
-						<img src="./resources/images/PHP-logo.svg" alt="PHP" />
-						<span class="lightgray">PHP</span>
-					</div>
-					<div class="hidden skill-element">
-						<img src="./resources/images/Bash_Logo_White.svg" alt="Bash" />
-						<span class="lightgray">Bash / Linux Shell</span>
-					</div>
-					<div class="hidden skill-element">
-						<img src="./resources/images/Vimlogo.svg" alt="Vim / NeoVim" />
-						<span class="lightgray">Vim / NeoVim</span>
-					</div>
-					<div class="hidden skill-element">
-						<img src="./resources/images/git.png" alt="Git" />
-						<span class="lightgray">Git</span>
-					</div>
-					<div class="hidden skill-element">
-						<img src="./resources/images/github.png" class="hidden github-icon" alt="Github" />
-						<span class="lightgray">GitHub</span>
-					</div>
-					<div class="hidden skill-element">
-						<img src="./resources/images/css-3.png" alt="CSS3" />
-						<span class="lightgray">CSS 3</span>
-					</div>
-					<div class="hidden skill-element">
-						<img src="./resources/images/html-5.png" alt="HTML5" />
-						<span class="lightgray">HTML 5</span>
-					</div>
-					<div class="hidden skill-element">
-						<img src="./resources/images/vscode.png" alt="VS Code" />
-						<span class="lightgray">VS Code</span>
-					</div>
-				</div>
-			</section>
-			<section id="project-section">
-				<h2 class="hidden white">
-					<span class="hidden hiddenL pink">04.</span>Projects
-					<div class="hidden hiddenR line"></div>
-				</h2>
-				<div class="disclaimer hidden hiddenB">
-					<p>
-						Thank you for visiting my portfolio! I’m currently in the process of
-						updating my projects and
-						refining my GitHub repositories to better reflect my skills and recent
-						work. Please check back
-						soon to see my latest developments. In the meantime, feel free to
-						connect with me directly if
-						you have any questions or would like to discuss potential opportunities.
-						I’m excited to share my
-						work with you soon!
-					</p>
-					<br>
-				</div>
-				<!-- <div class="hidden featured-container"> -->
-				<!-- 	<div class="hidden hiddenL featured-image"> -->
-				<!-- 		<a href="#welcome-section"><img src="./resources/images/portfolio.png" -->
-				<!-- 				alt="image of this portfolio" /></a> -->
-				<!-- 	</div> -->
-				<!-- 	<div class="hidden hiddenR featured-text"> -->
-				<!-- 		<span>Featured Project</span> -->
-				<!-- 		<h3>Portfolio Website</h3> -->
-				<!-- 		<div class="hidden project-description"> -->
-				<!-- 			<p> -->
-				<!-- 				As a challenge project for Codecademy's -->
-				<!-- 				Full-Stack-Developer path I chose to -->
-				<!-- 				recreate -->
-				<!-- 				<a class="hidden pink" href="https://brittanychiang.com">Brittany Chiang's</a> -->
-				<!-- 				amazing portfolio in my own code with some -->
-				<!-- 				alterations. This project helped me solidify -->
-				<!-- 				and expand my skills especially on the -->
-				<!-- 				front-end. -->
-				<!-- 			</p> -->
-				<!-- 		</div> -->
-				<!-- 		<ul> -->
-				<!-- 			<li>HTML</li> -->
-				<!-- 			<li>CSS</li> -->
-				<!-- 			<li>JavaScript</li> -->
-				<!-- 		</ul> -->
-				<!-- 		<div class="hidden project-links"> -->
-				<!-- 			<a target="_blank" href="https://github.com/raiku-dev/portfolio-v1"> -->
-				<!-- 				<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> -->
-				<!-- 					<title /> -->
-				<!-- 					<g data-name="Github 1" id="Github_1"> -->
-				<!-- 						<g data-name="&lt;Group&gt;" id="_Group_"> -->
-				<!-- 							<path -->
-				<!-- 								d="M12,.5A11.5,11.5,0,0,0,.5,12a11.82,11.82,0,0,0,9,11.5v-3h-1c-2.62,0-3.54-4-5-4,2.79,0,3.33,2,5,2a.89.89,0,0,0,1-1v-.35c-2.91-.82-5-3-5-5.65A5.26,5.26,0,0,1,6.07,7.84,3.16,3.16,0,0,1,6.5,4.5,5.26,5.26,0,0,1,8.88,6a9.14,9.14,0,0,1,6.24,0A5.26,5.26,0,0,1,17.5,4.5a3.16,3.16,0,0,1,.43,3.34A5.26,5.26,0,0,1,19.5,11.5c0,2.74-2.29,5-5.42,5.76a4.68,4.68,0,0,1,.42,2.24v4a11.82,11.82,0,0,0,9-11.5A11.5,11.5,0,0,0,12,.5Z" -->
-				<!-- 								data-name="&lt;Path&gt;" id="_Path_" style=" -->
-				<!--                                                     fill: none; -->
-				<!--                                                     stroke-linecap: round; -->
-				<!--                                                     stroke-linejoin: round; -->
-				<!--                                                 " /> -->
-				<!-- 						</g> -->
-				<!-- 					</g> -->
-				<!-- 				</svg> -->
-				<!-- 			</a> -->
-				<!-- 			<a href="#welcome-section"> -->
-				<!-- 				<svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" -->
-				<!-- 					width="128px" height="128px"> -->
-				<!-- 					<path -->
-				<!-- 						d="M97,104V59c0-1.7-1.3-3-3-3s-3,1.3-3,3v45c0,3.9-3.1,7-7,7H24c-3.9,0-7-3.1-7-7V44c0-3.9,3.1-7,7-7h45c1.7,0,3-1.3,3-3 s-1.3-3-3-3H24c-7.2,0-13,5.8-13,13v60c0,7.2,5.8,13,13,13h60C91.2,117,97,111.2,97,104z" /> -->
-				<!-- 					<path -->
-				<!-- 						d="M114,47c1.7,0,3-1.3,3-3V14c0-1.7-1.3-3-3-3H84c-1.7,0-3,1.3-3,3s1.3,3,3,3h22.8L60.4,63.4c-1.2,1.2-1.2,3.1,0,4.2 c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9L111,21.2V44C111,45.7,112.3,47,114,47z" /> -->
-				<!-- 				</svg> -->
-				<!-- 			</a> -->
-				<!-- 		</div> -->
-				<!-- 	</div> -->
-				<!-- </div> -->
-				<!-- <div class="hidden featured-container"> -->
-				<!-- 	<div class="hidden hiddenL featured-text ft-text-left"> -->
-				<!-- 		<span>Featured Project</span> -->
-				<!-- 		<h3>Lottery Number Generator</h3> -->
-				<!-- 		<div class="hidden project-description"> -->
-				<!-- 			<p> -->
-				<!-- 				This lottery number generator was meant to -->
-				<!-- 				be a console only project but I wanted to -->
-				<!-- 				provide a simple front-end to make the -->
-				<!-- 				interaction with it easier. It takes -->
-				<!-- 				user-inputs and randomizes the numbers in -->
-				<!-- 				ranges based on the inputs. -->
-				<!-- 			</p> -->
-				<!-- 		</div> -->
-				<!-- 		<ul> -->
-				<!-- 			<li>HTML</li> -->
-				<!-- 			<li>CSS</li> -->
-				<!-- 			<li>JavaScript</li> -->
-				<!-- 		</ul> -->
-				<!-- 		<div class="hidden project-links"> -->
-				<!-- 			<a target="_blank" href="https://github.com/raiku-dev/cc-18-lottery-number-generator/"> -->
-				<!-- 				<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> -->
-				<!-- 					<title /> -->
-				<!-- 					<g data-name="Github 1" id="Github_1"> -->
-				<!-- 						<g data-name="&lt;Group&gt;" id="_Group_"> -->
-				<!-- 							<path -->
-				<!-- 								d="M12,.5A11.5,11.5,0,0,0,.5,12a11.82,11.82,0,0,0,9,11.5v-3h-1c-2.62,0-3.54-4-5-4,2.79,0,3.33,2,5,2a.89.89,0,0,0,1-1v-.35c-2.91-.82-5-3-5-5.65A5.26,5.26,0,0,1,6.07,7.84,3.16,3.16,0,0,1,6.5,4.5,5.26,5.26,0,0,1,8.88,6a9.14,9.14,0,0,1,6.24,0A5.26,5.26,0,0,1,17.5,4.5a3.16,3.16,0,0,1,.43,3.34A5.26,5.26,0,0,1,19.5,11.5c0,2.74-2.29,5-5.42,5.76a4.68,4.68,0,0,1,.42,2.24v4a11.82,11.82,0,0,0,9-11.5A11.5,11.5,0,0,0,12,.5Z" -->
-				<!-- 								data-name="&lt;Path&gt;" id="_Path_" style=" -->
-				<!--                                                     fill: none; -->
-				<!--                                                     stroke-linecap: round; -->
-				<!--                                                     stroke-linejoin: round; -->
-				<!--                                                 " /> -->
-				<!-- 						</g> -->
-				<!-- 					</g> -->
-				<!-- 				</svg> -->
-				<!-- 			</a> -->
-				<!-- 			<a target="_blank" href="https://raiku-dev.github.io/cc-18-lottery-number-generator/"> -->
-				<!-- 				<svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" -->
-				<!-- 					width="128px" height="128px"> -->
-				<!-- 					<path -->
-				<!-- 						d="M97,104V59c0-1.7-1.3-3-3-3s-3,1.3-3,3v45c0,3.9-3.1,7-7,7H24c-3.9,0-7-3.1-7-7V44c0-3.9,3.1-7,7-7h45c1.7,0,3-1.3,3-3 s-1.3-3-3-3H24c-7.2,0-13,5.8-13,13v60c0,7.2,5.8,13,13,13h60C91.2,117,97,111.2,97,104z" /> -->
-				<!-- 					<path -->
-				<!-- 						d="M114,47c1.7,0,3-1.3,3-3V14c0-1.7-1.3-3-3-3H84c-1.7,0-3,1.3-3,3s1.3,3,3,3h22.8L60.4,63.4c-1.2,1.2-1.2,3.1,0,4.2 c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9L111,21.2V44C111,45.7,112.3,47,114,47z" /> -->
-				<!-- 				</svg> -->
-				<!-- 			</a> -->
-				<!-- 		</div> -->
-				<!-- 	</div> -->
-				<!-- 	<div class="hidden hiddenR featured-image"> -->
-				<!-- 		<a target="_blank" href="https://raiku-dev.github.io/cc-18-lottery-number-generator/"><img -->
-				<!-- 				src="./resources/images/lottery.png" alt="image of lottery number generator" /></a> -->
-				<!-- 	</div> -->
-				<!-- </div> -->
-				<!-- <div class="hidden featured-container"> -->
-				<!-- 	<div class="hidden hiddenL featured-image"> -->
-				<!-- 		<a target="_blank" href="https://raiku-dev.github.io/cc-16-company-homepage/"><img -->
-				<!-- 				src="./resources/images/company-homepage.png" alt="Image of company landing page" /></a> -->
-				<!-- 	</div> -->
-				<!-- 	<div class="hidden hiddenR featured-text"> -->
-				<!-- 		<span>Featured Project</span> -->
-				<!-- 		<h3>Company Landing Page</h3> -->
-				<!-- 		<div class="hidden project-description"> -->
-				<!-- 			<p> -->
-				<!-- 				This is a landing page for a fictive -->
-				<!-- 				business made only with HTML and CSS. The -->
-				<!-- 				Goal was to make a simple website with some -->
-				<!-- 				relevant information about the business. -->
-				<!-- 			</p> -->
-				<!-- 		</div> -->
-				<!-- 		<ul> -->
-				<!-- 			<li>HTML</li> -->
-				<!-- 			<li>CSS</li> -->
-				<!-- 		</ul> -->
-				<!-- 		<div class="hidden project-links"> -->
-				<!-- 			<a target="_blank" href="https://github.com/raiku-dev/cc-16-company-homepage"> -->
-				<!-- 				<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> -->
-				<!-- 					<title /> -->
-				<!-- 					<g data-name="Github 1" id="Github_1"> -->
-				<!-- 						<g data-name="&lt;Group&gt;" id="_Group_"> -->
-				<!-- 							<path -->
-				<!-- 								d="M12,.5A11.5,11.5,0,0,0,.5,12a11.82,11.82,0,0,0,9,11.5v-3h-1c-2.62,0-3.54-4-5-4,2.79,0,3.33,2,5,2a.89.89,0,0,0,1-1v-.35c-2.91-.82-5-3-5-5.65A5.26,5.26,0,0,1,6.07,7.84,3.16,3.16,0,0,1,6.5,4.5,5.26,5.26,0,0,1,8.88,6a9.14,9.14,0,0,1,6.24,0A5.26,5.26,0,0,1,17.5,4.5a3.16,3.16,0,0,1,.43,3.34A5.26,5.26,0,0,1,19.5,11.5c0,2.74-2.29,5-5.42,5.76a4.68,4.68,0,0,1,.42,2.24v4a11.82,11.82,0,0,0,9-11.5A11.5,11.5,0,0,0,12,.5Z" -->
-				<!-- 								data-name="&lt;Path&gt;" id="_Path_" style=" -->
-				<!--                                                     fill: none; -->
-				<!--                                                     stroke-linecap: round; -->
-				<!--                                                     stroke-linejoin: round; -->
-				<!--                                                 " /> -->
-				<!-- 						</g> -->
-				<!-- 					</g> -->
-				<!-- 				</svg> -->
-				<!-- 			</a> -->
-				<!-- 			<a target="_blank" href="https://raiku-dev.github.io/cc-16-company-homepage/"> -->
-				<!-- 				<svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" -->
-				<!-- 					width="128px" height="128px"> -->
-				<!-- 					<path -->
-				<!-- 						d="M97,104V59c0-1.7-1.3-3-3-3s-3,1.3-3,3v45c0,3.9-3.1,7-7,7H24c-3.9,0-7-3.1-7-7V44c0-3.9,3.1-7,7-7h45c1.7,0,3-1.3,3-3 s-1.3-3-3-3H24c-7.2,0-13,5.8-13,13v60c0,7.2,5.8,13,13,13h60C91.2,117,97,111.2,97,104z" /> -->
-				<!-- 					<path -->
-				<!-- 						d="M114,47c1.7,0,3-1.3,3-3V14c0-1.7-1.3-3-3-3H84c-1.7,0-3,1.3-3,3s1.3,3,3,3h22.8L60.4,63.4c-1.2,1.2-1.2,3.1,0,4.2 c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9L111,21.2V44C111,45.7,112.3,47,114,47z" /> -->
-				<!-- 				</svg> -->
-				<!-- 			</a> -->
-				<!-- 		</div> -->
-				<!-- 	</div> -->
-				<!-- </div> -->
-				<a href="https://github.com/raiku-dev/" class="hidden btn-a" target="_blank">
-					<button class="hidden btn">View more on GitHub</button>
-				</a>
-			</section>
-			<section id="contact-section">
-				<span class="hidden hiddenB">05. What's Next?</span>
-				<h2 class="hidden hiddenB white">
-					How do you like your coffee?
-				</h2>
-				<p class="hidden hiddenB">
-					If my portfolio sparked your interest and you'd like to
-					work with me, do not hesitate to contact me.<br>
-					My passion and willingness to learn will let me add
-					value to your team on day one!<br>
-					I cannot wait to take on a Developer role in your
-					company!
-				</p>
-
-				<a class="hidden hiddenB btn-a" href="mailto:mikayil_gacek@icloud.com"><button class="hidden btn">
-						Let's get to know each other!
-					</button></a>
-			</section>
-		</div>
-	</main>
-	<footer>
-		<div class="hidden hiddenB social-media-footer">
-			<a target="_blank" href="https://github.com/raiku-dev">
-				<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-					<title />
-					<g data-name="Github 1" id="Github_1">
-						<g data-name="&lt;Group&gt;" id="_Group_">
-							<path
-								d="M12,.5A11.5,11.5,0,0,0,.5,12a11.82,11.82,0,0,0,9,11.5v-3h-1c-2.62,0-3.54-4-5-4,2.79,0,3.33,2,5,2a.89.89,0,0,0,1-1v-.35c-2.91-.82-5-3-5-5.65A5.26,5.26,0,0,1,6.07,7.84,3.16,3.16,0,0,1,6.5,4.5,5.26,5.26,0,0,1,8.88,6a9.14,9.14,0,0,1,6.24,0A5.26,5.26,0,0,1,17.5,4.5a3.16,3.16,0,0,1,.43,3.34A5.26,5.26,0,0,1,19.5,11.5c0,2.74-2.29,5-5.42,5.76a4.68,4.68,0,0,1,.42,2.24v4a11.82,11.82,0,0,0,9-11.5A11.5,11.5,0,0,0,12,.5Z"
-								data-name="&lt;Path&gt;" id="_Path_" style="
-                                        fill: none;
-                                        stroke-linecap: round;
-                                        stroke-linejoin: round;
-                                    " />
-						</g>
-					</g>
-				</svg>
-			</a>
-			<a target="_blank" href="https://www.linkedin.com/in/mikayilgx/">
-				<svg enable-background="new 0 0 183.836 179.8984" id="linkedin" version="1.1"
-					viewBox="0 0 183.836 179.8984" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink">
-					<g>
-						<path
-							d="M21.5663,0C9.0703,0,0,8.6172,0,20.488c0,11.8636,8.8907,20.4748,21.1367,20.4748c6.3516,0,11.8244-2.0584,15.828-5.9552   c3.84-3.738,5.9572-8.8944,5.9532-14.6132C42.6367,8.3868,33.8555,0,21.5663,0z M31.3867,29.2732   c-2.4804,2.4144-6.0272,3.6896-10.25,3.6896C13.4023,32.9628,8,27.834,8,20.488C8,13.0196,13.4531,8,21.5663,8   c7.9337,0,13.172,4.9392,13.3516,12.49C34.9179,23.9376,33.664,27.0564,31.3867,29.2732z" />
-						<path
-							d="M3.836,179.8984h35.9531V47.7208H3.836V179.8984z M11.836,55.7208h19.9531v116.1776H11.836V55.7208z" />
-						<path
-							d="M134.5939,47.7208c-16.672,0-26.8792,5.7536-32.7932,11.166l-1.1247-11.166H60v132.1776h39.836v-69.4708   c0-2.992,1.2107-9.2052,1.9727-10.8456c4.8124-10.3652,11.3044-10.3652,21.1364-10.3652c11.3244,0,20.8909,10.6192,20.8909,23.1876   v67.494h40v-74.6816C183.836,65.7128,158.3087,47.7208,134.5939,47.7208z M175.836,171.8984h-24v-59.494   c0-16.9064-13.2305-31.1876-28.8909-31.1876c-10.0468,0-21.4336,0-28.3944,14.998c-1.4376,3.0996-2.7147,10.5292-2.7147,14.2128   v61.4708H68V55.7208h25.4415l1.6328,16.1776h6.5544l1.172-1.8908c2.668-4.2948,11.1056-14.2868,31.7932-14.2868   c19.8632,0,41.2421,15.488,41.2421,49.496V171.8984z" />
-					</g>
-				</svg>
-			</a>
-			<a target="_blank" href="https://twitter.com/home">
-				<svg data-name="Layer 1" id="Layer_1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
-					<title />
-					<path class="cls-1"
-						d="M86.94,30.66a19.58,19.58,0,0,1,14,6.17s7.64-1.5,11.86-4.47c0,0-1.06,5.88-8.09,10.38h.06c.54,0,4.48-.1,10.68-3,0,0-1.19,3.39-9.3,9.84v0c.49,15.26-7.06,43.47-35,53.51A56.36,56.36,0,0,1,52,106.52,53.69,53.69,0,0,1,22.5,97.85C24,98,25.35,98,26.7,98c16.52,0,24.52-8.48,24.08-8.48h-.61c-14,0-17.41-13.4-17.41-13.4a6.46,6.46,0,0,0,3.73.92,20.4,20.4,0,0,0,5-.73c-15.8-3.74-15.21-18.9-15.21-18.9a13.45,13.45,0,0,0,7.2,2.26,7,7,0,0,0,1.26-.1C20.31,48.15,29,34.52,29,34.52c16.26,18.87,36.25,19.54,39,19.54h.33c-1.48-8.86,2.17-17.37,12-22a15.35,15.35,0,0,1,6.54-1.4M106.2,49.6v0M122,18l-12.93,9.08a23.93,23.93,0,0,1-6.34,2.65,26.16,26.16,0,0,0-15.83-5.54h0a21.69,21.69,0,0,0-9.3,2c-9.18,4.31-14.76,11.75-15.87,20.68A49.25,49.25,0,0,1,33.94,30.28l-5.7-6.61L23.54,31a25.19,25.19,0,0,0-3.4,16.66l-.37,9.53a26.24,26.24,0,0,0,5.69,16.68l1,3.9a26.17,26.17,0,0,0,8.36,12.89,37.24,37.24,0,0,1-8.13.86c-1.19,0-2.42-.05-3.66-.15L.1,89.46l18.55,13.63A60.21,60.21,0,0,0,52,113a63,63,0,0,0,21.38-3.8,57.06,57.06,0,0,0,31.7-27.91,68.92,68.92,0,0,0,7.57-28.65c6.63-5.71,8.45-9.35,8.94-10.74l5.12-14.57-7,3.26L122,18Z" />
-				</svg>
-			</a>
-		</div>
-		<p>
-			Built & coded by:
-			<a class="hidden pink" href="https://github.com/raiku-dev">Mikayil Gacek</a>
-		</p>
-		<p class="hidden footer-small">
-			Design inspired by:
-			<a class="hidden pink" href="https://brittanychiang.com">Brittany Chiang</a>
-		</p>
-	</footer>
-</body>
-
+			<p>
+				Built & coded by:
+				<a class="hidden pink" href="https://github.com/raiku-dev"
+					>Mikayil Gacek</a
+				>
+			</p>
+			<p class="hidden footer-small">
+				Design inspired by:
+				<a class="hidden pink" href="https://brittanychiang.com"
+					>Brittany Chiang</a
+				>
+			</p>
+		</footer>
+	</body>
 </html>
