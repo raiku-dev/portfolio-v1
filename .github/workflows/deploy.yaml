@@ -1,0 +1,26 @@
+name: Deploy site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: prod
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Atomic deploy - swap directories
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /srv/v1.mikayil.dev
+            git pull
